@@ -1,0 +1,271 @@
+.hero-container {
+    height:89vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #f7eddc;
+    text-align: center;
+}
+
+.hero-background-img {
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-container h1 {
+  font-size: 2.8rem;
+}
+
+.hero-container p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.hero-buttons a:hover{
+  background: #333;
+  opacity: 90%;
+}
+
+
+.fleet-comparison {
+    padding: 2rem;
+    color: white;
+    width: 100%;
+    background-color:#333;
+}
+
+.fleet-comparison h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.modal-overlay {
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.custom-modal-dialog .modal-content {
+    color: #000;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: gray;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-header {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.modal-grid button {
+  width: 100%;
+  padding: 1rem;
+  min-height: 60px;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.modal-grid button.selected {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #555;
+}
+
+.modal-grid button:hover {
+  background-color: #ddd;
+}
+
+.card{
+  background-color: #333;
+  border: none;
+}
+
+.card-body{
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chart-container {
+  width: 600px;
+  height: 80vh;
+  padding: 2rem 2rem 10rem 2rem;
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.chart-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.chart-controls .filter-button {
+  background: white;
+  color: black;
+  border:1px solid #fff;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.chart-controls .remove-filter{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.chart-controls button:hover {
+  opacity: 0.9;
+  background-color: #ccc;
+  transition: 0.3s ease;
+}
+
+.currency-container {
+  margin-left: auto;
+  
+}
+
+.currency-container select {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+.selected-filters {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-tag {
+  background: transparent;
+  border: 1px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  width: auto;
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  transition: padding 0.2s ease;
+}
+
+.filter-tag:hover {
+  padding-right: 1.5rem;
+}
+
+.filter-tag:hover::after {
+  content: '×';
+  position: absolute;
+  right: 1rem;
+  font-size: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-tag a{
+    margin-right: 0.5rem;
+    color: white;
+}
+
+.filter-tag button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+
+.filter-tag button:hover {
+  color: #ccc;
+}

@@ -1,0 +1,94 @@
+.intro-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.intro-text {
+    margin-top: 3rem;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10rem;
+}
+
+.table-wrapper {
+  margin-top: 2.5rem;
+}
+.prices-container {
+  margin-top: 2rem;
+}
+
+.ship-classes-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  background: transparent;
+}
+
+.table-head th {
+  border-bottom: 1px solid #fff;
+  padding: 8px;
+  text-align: left;
+  background: transparent;
+}
+
+.table-row {
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.table-row.selected {
+  background-color: #444;
+}
+
+.table-cell {
+  padding: 8px;
+  border-bottom: 1px solid #555;
+}
+
+.selected-class-details {
+  margin-top: 4rem;
+  color: #fff;
+}
+
+
+.prices-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.prices-container .row {
+  flex: 1;
+  overflow: auto;
+}
+.table-col {
+  margin-right: 6rem;
+}
+
+.graph-col {
+  padding-left: 1rem;
+}
+
+.currency-toggle {
+  margin-bottom: 1rem;
+}
+
+.currency-toggle button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  margin-right: 0.5rem;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.currency-toggle button.active {
+  background-color: #007bff;
+}
+
+.placeholder-text {
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 2rem;
+}

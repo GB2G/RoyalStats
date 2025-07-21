@@ -1,0 +1,126 @@
+body{
+  background-color: #333;
+}
+
+.info-section{
+  padding: 3rem 5rem;
+}
+
+.info-section h3{
+  margin-top: 2rem;
+}
+
+.card-body{
+  border: none;
+}
+
+.timeline-header{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+}
+
+.timeline-card{
+  flex: 1.5;
+  margin-top: 1rem;
+  min-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+h2, h3, p, ul{
+  color: #fff;
+}
+
+.timeline-item {
+  color: #fff;
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 1.25rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #007bff;
+  border: 3px solid #fff;
+  transform: scale(0);
+  transition: transform 0.6s ease-out;
+}
+.timeline-item.visible::before {
+  transform: scale(1);
+}
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 1.25rem;
+  height: 2px;
+  background: #007bff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.6s ease-out;
+}
+.timeline-item:nth-child(odd)::before {
+  right: -6px;
+}
+.timeline-item:nth-child(even)::before {
+  left: -6px;
+}
+.timeline-item:nth-child(odd)::after {
+  right: calc(50% + 6px);
+  width: calc(50% - 6px);
+}
+.timeline-item:nth-child(even)::after {
+  left: calc(50% + 6px);
+  width: calc(50% - 6px);
+}
+.timeline-item.visible::after {
+  transform: scaleX(1);
+}
+.timeline-date {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.timeline-ship {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+}
